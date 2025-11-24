@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>互動式網頁</title>
+    <style>
+        body{
+            margin:0;
+            background-color:#ffb6c1;   /* 整體粉紅色背景 */
+            font-family:"Microsoft JhengHei","DFKai-SB","PMingLiU",sans-serif;
+        }
+
+        /* 頁首標題 */
+        #titleBar{
+            margin:20px;
+            padding:15px 10px;
+            text-align:center;
+            font-size:40px;
+            font-weight:bold;
+            background-color:#ffd4e5;
+            border-radius:15px;
+            transition:background-color .3s;
+        }
+        #titleBar:hover{
+            background-color:#fff29b;   /* 滑過標題變成淡黃色 */
+        }
+
+        /* 導覽列 */
+        .nav{
+            text-align:center;
+            font-size:20px;
+            margin-top:5px;
+            margin-bottom:25px;
+        }
+        .nav a{
+            text-decoration:underline;
+            padding:0 10px;
+        }
+
+        /* 超連結顏色設定 */
+        a:link{
+            color:#000000;      /* 未點選 */
+        }
+        a:visited{
+            color:#990099;      /* 已點選 */
+        }
+        .nav a:hover{
+            background-color:#fff29b;   /* 滑過超連結換背景色 */
+        }
+
+        /* 內容區 */
+        .section{
+            margin:0 40px 40px 40px;
+        }
+        .section h2{
+            font-size:32px;
+            margin:0 0 10px 0;
+        }
+
+        /* 圖片外框 */
+        .img-box{
+            display:inline-block;
+            border:4px dashed #000;
+            padding:20px;
+            background-color:#ffb6c1;
+            position:relative;
+            transition:background-color .3s;
+        }
+        .img-box:hover{
+            background-color:#ffe6f2;   /* 滑過圖片外框變色 */
+        }
+        .img-box img{
+            display:block;
+            max-width:100%;
+            height:auto;
+        }
+        /* 圖片下方的小標籤，滑過才顯示 */
+        .img-label{
+            position:absolute;
+            left:50%;
+            bottom:10px;
+            transform:translateX(-50%);
+            padding:4px 12px;
+            background-color:rgba(255,255,255,0.9);
+            border-radius:4px;
+            font-size:14px;
+            opacity:0;
+            transition:opacity .3s;
+        }
+        .img-box:hover .img-label{
+            opacity:1;
+        }
+
+        /* 文字敘述 */
+        p{
+            font-size:18px;
+            line-height:1.7;
+            text-indent:2em;
+        }
+        p:hover{
+            background-color:#ffe6f2;   /* 滑過文字也會換背景色 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頁首標題 -->
+    <div id="titleBar">互動式網頁</div>
+
+    <!-- 導覽列 -->
+    <div class="nav">
+        <a href="#flower1">雞蛋花</a>
+        <a href="#flower2">繡球花</a>
+    </div>
+
+    <!-- 雞蛋花區塊 -------------------------------------------------------->
+    <div class="section">
+        <a id="flower1"></a>
+        <h2>雞蛋花</h2>
+
+        <div class="img-box">
+            <!-- 圖片來源可換成自己檔案，例如 plumeria.jpg -->
+            <img src="plumeria.jpg" alt="雞蛋花" width="420" height="420">
+            <div class="img-label">雞蛋花</div>
+        </div>
+
+        <p>
+            緬梔（ㄇㄧㄢˇ ㄓ）屬（學名：Plumeria），別稱雞蛋花、印度素馨、鹿角樹、
+            番仔花、番花、大季花、蛋黃花、島嶼花，是夾竹桃科的一個屬，
+            緬梔屬全球約有 5,000 種，一般作觀賞用途。屬名以法國植物學家夏爾．普呂米耶
+            （Charles Plumier，1646－1704）的名字命名。
+        </p>
+    </div>
+
+    <!-- 繡球花區塊 -------------------------------------------------------->
+    <div class="section">
+        <a id="flower2"></a>
+        <h2>繡球花</h2>
+
+        <div class="img-box">
+            <!-- 圖片來源可換成自己檔案，例如 hydrangea.jpg -->
+            <img src="hydrangea.jpg" alt="繡球花" width="420" height="420">
+            <div class="img-label">繡球花</div>
+        </div>
+
+        <p>
+            繡球花（學名：Hydrangea macrophylla），又稱八仙花、粉團花。
+            原產於日本，現今廣泛栽培於世界各地溫帶地區。繡球花的花序巨大，
+            顏色多變，常見有粉紅、淡藍、紫色等色彩，深受園藝愛好者喜愛，
+            經常作為庭園、花壇及盆栽的觀賞植物。
+        </p>
+    </div>
+
+</body>
+</html>
