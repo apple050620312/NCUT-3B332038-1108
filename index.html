@@ -6,7 +6,7 @@
     <style>
         body{
             margin:0;
-            background-color:#ffb6c1;   /* 整體粉紅色背景 */
+            background-color:#ffb6c1;
             font-family:"Microsoft JhengHei","DFKai-SB","PMingLiU",sans-serif;
         }
 
@@ -22,10 +22,9 @@
             transition:background-color .3s;
         }
         #titleBar:hover{
-            background-color:#fff29b;   /* 滑過標題變成淡黃色 */
+            background-color:#fff29b;
         }
 
-        /* 導覽列 */
         .nav{
             text-align:center;
             font-size:20px;
@@ -37,18 +36,15 @@
             padding:0 10px;
         }
 
-        /* 超連結顏色設定 */
         a:link{
-            color:#000000;      /* 未點選 */
+            color:#000000;
         }
         a:visited{
-            color:#990099;      /* 已點選 */
+            color:#990099;
         }
         .nav a:hover{
-            background-color:#fff29b;   /* 滑過超連結換背景色 */
-        }
+            background-color:#fff29b;
 
-        /* 內容區 */
         .section{
             margin:0 40px 40px 40px;
         }
@@ -57,7 +53,6 @@
             margin:0 0 10px 0;
         }
 
-        /* 圖片外框 */
         .img-box{
             display:inline-block;
             border:4px dashed #000;
@@ -67,14 +62,13 @@
             transition:background-color .3s;
         }
         .img-box:hover{
-            background-color:#ffe6f2;   /* 滑過圖片外框變色 */
+            background-color:#ffe6f2;
         }
         .img-box img{
             display:block;
             max-width:100%;
             height:auto;
         }
-        /* 圖片下方的小標籤，滑過才顯示 */
         .img-label{
             position:absolute;
             left:50%;
@@ -91,35 +85,30 @@
             opacity:1;
         }
 
-        /* 文字敘述 */
         p{
             font-size:18px;
             line-height:1.7;
             text-indent:2em;
         }
         p:hover{
-            background-color:#ffe6f2;   /* 滑過文字也會換背景色 */
+            background-color:#ffe6f2; 
         }
     </style>
 </head>
 <body>
 
-    <!-- 頁首標題 -->
     <div id="titleBar">互動式網頁</div>
 
-    <!-- 導覽列 -->
     <div class="nav">
         <a href="#flower1">雞蛋花</a>
         <a href="#flower2">繡球花</a>
     </div>
 
-    <!-- 雞蛋花區塊 -------------------------------------------------------->
     <div class="section">
         <a id="flower1"></a>
         <h2>雞蛋花</h2>
 
         <div class="img-box">
-            <!-- 圖片來源可換成自己檔案，例如 plumeria.jpg -->
             <img src="plumeria.jpg" alt="雞蛋花" width="420" height="420">
             <div class="img-label">雞蛋花</div>
         </div>
@@ -132,13 +121,11 @@
         </p>
     </div>
 
-    <!-- 繡球花區塊 -------------------------------------------------------->
     <div class="section">
         <a id="flower2"></a>
         <h2>繡球花</h2>
 
         <div class="img-box">
-            <!-- 圖片來源可換成自己檔案，例如 hydrangea.jpg -->
             <img src="hydrangea.jpg" alt="繡球花" width="420" height="420">
             <div class="img-label">繡球花</div>
         </div>
